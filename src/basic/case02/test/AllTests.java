@@ -3,6 +3,7 @@ package basic.case02.test;
 import junit.framework.Test;
 import junit.framework.TestSuite;
 
+import org.junit.Rule;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;

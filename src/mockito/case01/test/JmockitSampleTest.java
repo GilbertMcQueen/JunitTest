@@ -2,9 +2,9 @@ package mockito.case01.test;
 
 import mockit.*;
 import org.junit.Test;
-import mockito.case01.test.Child;
-import mockito.case01.test.Parent;
-import mockito.case01.test.Tekitou;
+import mockito.case01.Child;
+import mockito.case01.Parent;
+import mockito.case01.Tekitou;
 
 public class JmockitSampleTest {
 

@@ -1,16 +1,17 @@
 package basic.case02.test;
 
 import static org.junit.Assert.*;
+
 import java.lang.reflect.Field;
+
 import junit.framework.TestCase;
+
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
+
 import basic.case02.Person;
 
-/**
- * @author y_kusano
- *
- */
 public class PersonTest extends  TestCase{
 
 	private Person defaultPerson;
@@ -23,7 +24,16 @@ public class PersonTest extends  TestCase{
 		this.defaultPerson = new Person();
 	}
 
+	/**
+	 * ルールのテスト
+	 */
+	@Rule
+	CommonProcess cp = new CommonProcess();
+
+	@Test
 	public void testDefaultPerson() throws Exception {
+
+
 		Class c = this.defaultPerson.getClass();
 
 		Field nameField = c.getDeclaredField("name");

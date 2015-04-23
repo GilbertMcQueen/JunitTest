@@ -1,6 +1,7 @@
 package basic.case02.test;
 
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,15 +9,20 @@ import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.TemporaryFolder;
+
 import basic.case02.StringUtil;
 import junit.framework.TestCase;
 
-/**
- * @author y_kusano
- *
- */
 public class StringUtilTest extends TestCase {
+
+	/**
+	 * ルールのテスト
+	 */
+	@Rule
+	CommonProcess cp = new CommonProcess();
 
 	/**
 	 * 文字分割のテストVer.1
@@ -24,7 +30,8 @@ public class StringUtilTest extends TestCase {
 	@Test
 	public void testSplit() {
 
-		System.out.println("テストが走った");
+		System.out.println("テストが走った!文字分割のテストVer.1");
+
 
 //		List list = new ArrayList();
 //		try {
@@ -57,6 +64,8 @@ public class StringUtilTest extends TestCase {
 	 */
 	@Test
 	public void testSplit2() {
+
+		System.out.println("テストが走った!文字分割のテストVer.2");
 
 		// ****1ケース目****
 		// 分割対象の文字

@@ -3,7 +3,7 @@ package mockito.case01.test;
 import mockit.Mocked;
 import org.junit.Before;
 import org.junit.Test;
-import mockito.case01.test.Child;;
+import mockito.case01.Child;
 
 public class JmokitSampleTest2 {
 

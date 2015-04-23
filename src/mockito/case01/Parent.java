@@ -1,4 +1,4 @@
-package mockito.case01.test;
+package mockito.case01;
 
 public class Parent {
 
